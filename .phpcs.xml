@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="StarterKit">
+  <description>PHP Code Sniffer configuration for StarterKit.</description>
+  <arg name="colors"/>
+  <arg value="s" />
+  <arg name="cache" value=".phpcs-cache"/>
+  <arg name="parallel" value="1"/>
+  <rule ref="AcquiaDrupalStrict">
+    <exclude name="Drupal.InfoFiles.AutoAddedKeys.Version"/>
+    <exclude name="Drupal.Commenting.FileComment.Missing"/>
+    <exclude name="PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.resourceFound"/>
+    <exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingTraversableTypeHintSpecification"/>
+    <exclude name="SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingTraversableTypeHintSpecification"/>
+    <exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingTraversableTypeHintSpecification"/>
+  </rule>
+  <rule ref="Generic.PHP.RequireStrictTypes" />
+  <rule ref="PHPCompatibility">
+    <config name="testVersion" value="8.2"/>
+    <exclude name="PHPCompatibility.Extensions.RemovedExtensions.ypRemoved"/>
+  </rule>
+  <file>./web/modules/custom</file>
+  <arg name="extensions" value="php,module,inc,install,test,profile,theme,css,info,txt,md,yml"/>
+  <exclude-pattern>/node_modules/</exclude-pattern>
+  <exclude-pattern>/dist/</exclude-pattern>
+  <exclude-pattern>*.min.*</exclude-pattern>
+  <exclude-pattern>vendor/*</exclude-pattern>
+  <exclude-pattern>config/*</exclude-pattern>
+  <exclude-pattern>/node_modules/</exclude-pattern>
+  <exclude-pattern>*.css</exclude-pattern>
+  <exclude-pattern>.idea/</exclude-pattern>
+</ruleset>

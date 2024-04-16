@@ -1,0 +1,93 @@
+grumphp:
+  git_hook_variables:
+    EXEC_GRUMPHP_COMMAND: fin run-cli --image=docksal/cli:php8.2-3.6 php
+  stop_on_failure: false
+  ignore_unstaged_changes: true
+  tasks:
+    git_blacklist:
+      keywords:
+        - "die("
+        - "var_dump("
+        - "dpm("
+    composer:
+      file: ./composer.json
+      no_check_all: false
+      no_check_lock: false
+      no_check_publish: true
+      no_local_repository: false
+      with_dependencies: false
+      strict: false
+    phplint:
+      triggered_by:
+        - php
+        - module
+        - theme
+        - install
+        - inc
+    phpcs:
+      standard: [ '.phpcs.xml' ]
+      ignore_patterns:
+        - .github
+        - .gitlab
+        - /config/
+        - /drush/
+        - /web/robots.txt
+        - /web/sites/default/
+        - /vendor
+        - /load.environment.php
+      triggered_by:
+        - php
+        - module
+        - inc
+        - install
+        - test
+        - profile
+        - theme
+        - info
+        - txt
+        - md
+        - yml
+        - css
+        - js
+    phpmd:
+      whitelist_patterns:
+        - /^web\/modules\/custom\/(.*)/
+      ruleset: [ 'phpmd.xml' ]
+      triggered_by: [ 'php', 'install', 'inc', 'module' ]
+    phpmnd:
+      directory: web/modules/custom
+      whitelist_patterns: [ ]
+      exclude: [ ]
+      exclude_name: [ ]
+      exclude_path: [ ]
+      extensions: [ ]
+      hint: false
+      ignore_funcs: [ ]
+      ignore_numbers: [ ]
+      ignore_strings: [ ]
+      strings: false
+      triggered_by: [ 'php', 'install', 'inc', 'module' ]
+    yamllint: ~
+    git_branch_name:
+      whitelist:
+        - /[[A-Z]*-\d+|release--\d+\.?\d+\.?\d+/
+      blacklist:
+        - "develop"
+        - "staging"
+        - "master"
+      additional_modifiers: ''
+      allow_detached_head: true
+    git_commit_message:
+      allow_empty_message: false
+      enforce_capitalized_subject: true
+      enforce_no_subject_punctuations: false
+      enforce_no_subject_trailing_period: false
+      enforce_single_lined_subject: false
+      type_scope_conventions: [ ]
+      max_body_width: 72
+      max_subject_width: 120
+      matchers:
+        Must contain JIRA issue number: /^\[[A-Z]*-\d+\].*|Merge.*/
+      case_insensitive: true
+      multiline: true
+      additional_modifiers: ''

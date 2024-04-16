@@ -1,27 +1,21 @@
 {
     "name": "fivejars/drupal_starterkit_demo",
     "description": "Demo project based on FiveJars StarterKit distribution.",
-    "type": "project",
     "license": "GPL-2.0-or-later",
+    "type": "project",
     "homepage": "https://github.com/fivejars/drupal_starterkit_demo",
     "support": {
         "issues": "https://github.com/fivejars/drupal_starterkit_demo/issues",
         "source": "https://github.com/fivejars/drupal_starterkit_demo"
     },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
-        }
-    ],
     "require": {
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.5.0",
         "drupal/core-composer-scaffold": "^10.2",
         "drupal/core-recommended": "^10.2",
+        "drush/drush": "^12.4",
         "fivejars/drupal_starterkit": "dev-master",
         "fivejars/drupal_starterkit_theme": "dev-main",
-        "drush/drush": "^12.4",
         "wikimedia/composer-merge-plugin": "^2.1"
     },
     "require-dev": {
@@ -33,33 +27,35 @@
     "conflict": {
         "drupal/drupal": "*"
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "allow-plugins": {
             "composer/installers": true,
             "cweagans/composer-patches": true,
-            "drupal/core-composer-scaffold": true,
-            "phpstan/extension-installer": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
+            "drupal/core-composer-scaffold": true,
+            "ergebnis/composer-normalize": true,
             "php-http/discovery": true,
             "phpro/grumphp-shim": true,
-            "ergebnis/composer-normalize": true,
+            "phpstan/extension-installer": true,
             "wikimedia/composer-merge-plugin": true
         },
         "sort-packages": true
     },
     "extra": {
-        "merge-plugin": {
-            "include": [
-                "web/profiles/contrib/starterkit/composer.libraries.json"
-            ]
-        },
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
             }
         },
+        "enable-patching": true,
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"
@@ -89,6 +85,41 @@
                 "type:drupal-custom-theme"
             ]
         },
-        "enable-patching": true
+        "merge-plugin": {
+            "include": [
+                "web/profiles/contrib/starterkit/composer.libraries.json"
+            ]
+        }
+    },
+    "scripts": {
+        "grumphp": [
+            "Composer\\Config::disableProcessTimeout",
+            "vendor/bin/grumphp run"
+        ],
+        "phpcbf": "vendor/bin/phpcbf",
+        "phpcs": [
+            "Composer\\Config::disableProcessTimeout",
+            "vendor/bin/phpcs"
+        ],
+        "phpmd": [
+            "Composer\\Config::disableProcessTimeout",
+            "vendor/bin/phpmd web/modules/custom/ text phpmd.xml"
+        ],
+        "phpmetrics": [
+            "Composer\\Config::disableProcessTimeout",
+            "vendor/bin/phpmetrics --composer=false --report-html=/var/www/web/report/phpmetrics web/modules/custom"
+        ],
+        "phpmnd": [
+            "Composer\\Config::disableProcessTimeout",
+            "vendor/bin/phpmnd web/modules/custom --progress"
+        ],
+        "phpstan": [
+            "Composer\\Config::disableProcessTimeout",
+            "vendor/bin/phpstan analyse"
+        ],
+        "twigcs": [
+            "Composer\\Config::disableProcessTimeout",
+            "vendor/bin/twigcs"
+        ]
     }
 }
