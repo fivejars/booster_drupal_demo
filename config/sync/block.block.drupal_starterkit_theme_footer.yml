@@ -1,0 +1,27 @@
+uuid: deca02a2-ca24-48e1-a856-14ee3755a733
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - drupal_starterkit_theme
+_core:
+  default_config_hash: d9DptoQEZUmABTGV1l5KvBxjw_XcOVr3S8-O5svNvMw
+id: drupal_starterkit_theme_footer
+theme: drupal_starterkit_theme
+region: footer
+weight: -5
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

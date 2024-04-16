@@ -1,0 +1,27 @@
+uuid: 2a224d7e-add3-40b6-9be9-9abe8913e75c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.webform
+    - field.field.block_content.webform.field_webform
+  module:
+    - webform
+_core:
+  default_config_hash: i0kEfgO90bRc48YfKZ-SqlXpv_FryOuHdHBQQL5-phg
+id: block_content.webform.default
+targetEntityType: block_content
+bundle: webform
+mode: default
+content:
+  field_webform:
+    type: webform_entity_reference_entity_view
+    label: hidden
+    settings:
+      source_entity: true
+      lazy: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

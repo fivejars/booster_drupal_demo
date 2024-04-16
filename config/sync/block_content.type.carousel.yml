@@ -1,0 +1,10 @@
+uuid: 0863f0a0-b95d-461b-8593-62c03ef2402e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ElP18dIPk363KliJANqg5owvlt-1O0hZ2DgyXEESQ8w
+id: carousel
+label: Carousel
+revision: 0
+description: 'A component for dynamically displaying images.'

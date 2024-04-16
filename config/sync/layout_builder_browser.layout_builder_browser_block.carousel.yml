@@ -1,0 +1,13 @@
+uuid: 2da5d8a6-6c4b-4ccd-b9ba-1c89130b8276
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: xwQT8a6Bg0Tlk9SISTnSoGFbXZhZftsSE46yVfdWED8
+id: carousel
+block_id: 'inline_block:carousel'
+category: basic_blocks
+label: Carousel
+weight: -100
+image_path: ''
+image_alt: ''

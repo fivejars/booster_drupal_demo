@@ -1,0 +1,30 @@
+uuid: 8cc81093-d454-429b-8000-4467a8b95edf
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner
+    - field.storage.block_content.field_description
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.plain_text
+  module:
+    - text
+_core:
+  default_config_hash: Orlm8lka__SxtlnVM71IptP5e4n4a0z3A4GD_-y_v80
+id: block_content.banner.field_description
+field_name: field_description
+entity_type: block_content
+bundle: banner
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - full_html
+    - plain_text
+field_type: text_long

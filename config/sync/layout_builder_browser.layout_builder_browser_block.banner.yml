@@ -1,0 +1,13 @@
+uuid: 22f41008-e471-42f0-8363-80d1d22f33f8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1OYXCWBq-6pPtxgsOYx4suuTHjmaLxNQ0o-DPshAalE
+id: banner
+block_id: 'inline_block:banner'
+category: basic_blocks
+label: Banner
+weight: -100
+image_path: ''
+image_alt: ''

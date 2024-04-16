@@ -1,0 +1,13 @@
+uuid: 9d50dbbb-8721-4b83-97c6-0cf2328aa6e5
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: PYKWsozQ_IizbJn2SH8xcE4pLDp79VCK70N9wxacka4
+id: gallery
+block_id: 'inline_block:gallery'
+category: basic_blocks
+label: Gallery
+weight: -100
+image_path: ''
+image_alt: ''

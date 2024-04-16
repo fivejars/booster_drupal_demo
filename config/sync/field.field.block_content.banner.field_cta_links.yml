@@ -1,0 +1,25 @@
+uuid: 2b74b0b2-5f0c-4fc1-a8e3-681bf83da23e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner
+    - field.storage.block_content.field_cta_links
+  module:
+    - link
+_core:
+  default_config_hash: foakBEMT5RcXTjQQCoEwq39M7yditZV6iMW4OmeH7h8
+id: block_content.banner.field_cta_links
+field_name: field_cta_links
+entity_type: block_content
+bundle: banner
+label: 'CTA / links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

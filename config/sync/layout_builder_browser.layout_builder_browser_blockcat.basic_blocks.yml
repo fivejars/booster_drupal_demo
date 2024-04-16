@@ -1,0 +1,10 @@
+uuid: 862cb01d-738a-4f9e-ae48-c5909ccbf926
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: tkfXORPN8n1neKzcYHKk7X6L2p0ZyRn9fk_2isdFzG4
+id: basic_blocks
+label: 'Basic Blocks'
+weight: null
+opened: true

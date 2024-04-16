@@ -1,0 +1,25 @@
+uuid: cc4a814c-b71b-485e-b07c-9885c6ed9b1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.gallery
+    - field.field.block_content.gallery.field_medias
+_core:
+  default_config_hash: Khb_McWCIZ2d6FBMsqmQJ-JxcVYpMLSYzZA1PUt_eyA
+id: block_content.gallery.default
+targetEntityType: block_content
+bundle: gallery
+mode: default
+content:
+  field_medias:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

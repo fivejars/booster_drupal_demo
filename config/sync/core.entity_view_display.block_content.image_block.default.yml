@@ -1,0 +1,29 @@
+uuid: 9c2fb789-286b-402a-a2a8-6b97d43fc632
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.image_block
+    - field.field.block_content.image_block.field_media
+  module:
+    - media
+_core:
+  default_config_hash: hFt1EIWnWhnXYKqaP9mjQDNjuBr7804UHQk5QbeylbU
+id: block_content.image_block.default
+targetEntityType: block_content
+bundle: image_block
+mode: default
+content:
+  field_media:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

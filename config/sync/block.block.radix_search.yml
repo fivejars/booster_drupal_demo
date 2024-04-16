@@ -1,0 +1,25 @@
+uuid: fcc82274-43d2-43d7-8299-5df3faed329b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search
+  module:
+    - views
+  theme:
+    - radix
+_core:
+  default_config_hash: Q5iws5a3FyLDUTIWUABrN6PFlRqIXUkg3cWioeTzVDU
+id: radix_search
+theme: radix
+region: navbar_branding
+weight: 9
+provider: null
+plugin: 'views_exposed_filter_block:search-page'
+settings:
+  id: 'views_exposed_filter_block:search-page'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility: {  }

@@ -1,0 +1,17 @@
+uuid: 47c8af15-c8f2-4c45-93eb-3a8f0d4abf5e
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+_core:
+  default_config_hash: dFDCSlRyW9uEIRH6hdp0KmkM81B5I2MmjGewJtdN9BQ
+id: default
+name: Default
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  matching: words
+  phrase: bigram

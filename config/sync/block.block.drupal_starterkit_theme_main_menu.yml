@@ -1,0 +1,27 @@
+uuid: 3a428e35-c3a7-449b-b1d1-85b6083249e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - drupal_starterkit_theme
+_core:
+  default_config_hash: K7Mp33ifTUdeZMrkw6zprAr3mu581y3PyIP0Mw_ziNQ
+id: drupal_starterkit_theme_main_menu
+theme: drupal_starterkit_theme
+region: navbar_left
+weight: -5
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }

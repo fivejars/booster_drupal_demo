@@ -1,0 +1,10 @@
+uuid: 8fa2f1fd-b1f2-4218-82aa-faeaca2fa908
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: BIY6vFHjDpjStiKsl8gjoVmxaZHqC46LlQWGLD5Fhzc
+id: gallery
+label: Gallery
+revision: 0
+description: 'A component for place video and image.'

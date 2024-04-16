@@ -1,0 +1,31 @@
+uuid: f9ce868c-1b78-443a-9a8d-e5b4114cf25c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner
+    - field.storage.block_content.field_media
+    - media.type.image
+_core:
+  default_config_hash: t9r_RIpzFms4fzTLQWA4JwgYLK3LB5YWvQ0wUM3gPic
+id: block_content.banner.field_media
+field_name: field_media
+entity_type: block_content
+bundle: banner
+label: Image
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

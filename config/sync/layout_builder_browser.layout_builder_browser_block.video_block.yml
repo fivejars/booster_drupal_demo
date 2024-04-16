@@ -1,0 +1,13 @@
+uuid: 9a3a3993-ad73-4589-a4e9-c898d94e12be
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pweQph3vu5Nyx1zfu0LvT0QlnwjIZKVY5DUyCfYyYtg
+id: video_block
+block_id: 'inline_block:video'
+category: basic_blocks
+label: 'Video block'
+weight: -100
+image_path: ''
+image_alt: ''

@@ -1,0 +1,13 @@
+uuid: da332e04-c3a3-4efe-962d-34d3539d7df0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: LcxCc8bfg5f5vkvk7Z5DJzAbYI8tkBGAGWnS2TV7UhQ
+id: image_block
+block_id: 'inline_block:image_block'
+category: basic_blocks
+label: 'Image block'
+weight: null
+image_path: ''
+image_alt: ''

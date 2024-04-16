@@ -1,0 +1,13 @@
+uuid: c26e4594-c850-414b-8ae8-9fd5382d367e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OzYOIJTE0M5s18dQhVHNgYyTnZJSLex14fpF38MDQ_U
+id: text_block
+block_id: 'inline_block:basic'
+category: basic_blocks
+label: 'Text Block'
+weight: null
+image_path: ''
+image_alt: ''

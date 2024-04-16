@@ -1,0 +1,10 @@
+uuid: 1306c434-2e1a-494a-b24b-6358d93461e4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: KQeYzvqiVL6VO-rjYg1JHuuvg7fg9DvQRU7HRkLjRvI
+id: banner
+label: Banner
+revision: 0
+description: 'A component for placing the full-width image, text, and CTA link.'

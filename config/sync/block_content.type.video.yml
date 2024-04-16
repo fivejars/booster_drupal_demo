@@ -1,0 +1,10 @@
+uuid: d0cc8d69-7c0f-4175-a90d-0aa6ee3ee2ca
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 2NiwGDL3VrvfBlpcAhGFYG2FA88Woc0y5-HbomncvbQ
+id: video
+label: Video
+revision: 0
+description: 'A component for adding video.'

@@ -1,0 +1,25 @@
+uuid: e7a375a6-ccff-441f-845f-f4cf284c36b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.carousel
+    - field.field.block_content.carousel.field_items
+_core:
+  default_config_hash: gt4Q75zzkCRDzFhW9F4S_713wiSDoUleS4PsbK973FA
+id: block_content.carousel.default
+targetEntityType: block_content
+bundle: carousel
+mode: default
+content:
+  field_items:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

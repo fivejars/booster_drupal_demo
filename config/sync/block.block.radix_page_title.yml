@@ -1,0 +1,20 @@
+uuid: 91eb057f-7ff8-4610-b411-47982370dbcb
+langcode: en
+status: true
+dependencies:
+  theme:
+    - radix
+_core:
+  default_config_hash: hf6f7MvHe1YVzxbzFnepvFwkEoL69iHPiD6XIv4hsMs
+id: radix_page_title
+theme: radix
+region: navbar_branding
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

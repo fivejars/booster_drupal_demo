@@ -1,0 +1,10 @@
+uuid: 20508f1d-4f8f-4bb8-b58f-2c4eff311470
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: TUYFePYAvS8CKwgY9T2y3CRFKpDIt7lNXjKY5odyyYY
+id: webform
+label: Webform
+revision: 0
+description: 'A component for adding custom Webform.'

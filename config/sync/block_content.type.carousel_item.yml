@@ -1,0 +1,10 @@
+uuid: 85fbf8e0-5487-4d6b-9e2d-2e6824344e26
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: MN9uidmTRU-NUSd2jWSL2KsE49shYz68XduTHtI12Hs
+id: carousel_item
+label: 'Carousel item'
+revision: 0
+description: 'A sub-component for the Carousel component.'

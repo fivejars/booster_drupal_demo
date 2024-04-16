@@ -1,0 +1,13 @@
+uuid: 31e6925b-16b0-4d81-b740-403529cd0041
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: CXkS3lfVUXQ2KYYzC4SFFIBcak46JZCj-s9vTx0bdM8
+id: webform
+block_id: 'inline_block:webform'
+category: basic_blocks
+label: Webform
+weight: -100
+image_path: ''
+image_alt: ''
