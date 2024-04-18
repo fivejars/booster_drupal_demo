@@ -5,6 +5,7 @@ module:
   addtoany: 0
   admin_audit_trail: 0
   admin_toolbar: 0
+  admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
   advagg: 0
   better_exposed_filters: 0

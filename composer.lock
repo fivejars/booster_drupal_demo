@@ -8301,12 +8301,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fivejars/drupal_starterkit.git",
-                "reference": "a719106f88e7d0068b9b37690610c0df8f8768af"
+                "reference": "89a950e22cf38ecfd9d80e05ab46c8bfc5276844"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fivejars/drupal_starterkit/zipball/a719106f88e7d0068b9b37690610c0df8f8768af",
-                "reference": "a719106f88e7d0068b9b37690610c0df8f8768af",
+                "url": "https://api.github.com/repos/fivejars/drupal_starterkit/zipball/89a950e22cf38ecfd9d80e05ab46c8bfc5276844",
+                "reference": "89a950e22cf38ecfd9d80e05ab46c8bfc5276844",
                 "shasum": ""
             },
             "require": {
@@ -8403,7 +8403,7 @@
                 "issues": "https://github.com/fivejars/drupal_starterkit/issues",
                 "source": "https://github.com/fivejars/drupal_starterkit/tree/master"
             },
-            "time": "2024-04-15T10:05:47+00:00"
+            "time": "2024-04-18T11:02:08+00:00"
         },
         {
             "name": "fivejars/drupal_starterkit_theme",
