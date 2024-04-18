@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "98657326bab0aec8908ec670569ffe43",
+    "content-hash": "68df92ac59e0bb51f603f28aab83028b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -7712,6 +7712,78 @@
                 "issues": "https://www.drupal.org/project/issues/webform?version=8.x",
                 "docs": "https://www.drupal.org/docs/8/modules/webform",
                 "forum": "https://drupal.stackexchange.com/questions/tagged/webform"
+            }
+        },
+        {
+            "name": "drupal/webform_pardot",
+            "version": "2.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webform_pardot.git",
+                "reference": "2.0.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_pardot-2.0.0-beta1.zip",
+                "reference": "2.0.0-beta1",
+                "shasum": "b6a24457d6b6bf484b80eb77d26053804568455d"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10",
+                "drupal/webform": "^6.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-beta1",
+                    "datestamp": "1692989418",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Reynen",
+                    "homepage": "https://www.drupal.org/u/kreynen",
+                    "role": "D9 Maintainer"
+                },
+                {
+                    "name": "tbradbury",
+                    "homepage": "https://www.drupal.org/u/tbradbury",
+                    "role": "D8 Maintainer"
+                },
+                {
+                    "name": "Safallia Joseph",
+                    "homepage": "https://www.drupal.org/u/safallia-joseph",
+                    "role": "Original module developer"
+                },
+                {
+                    "name": "Safallia Joseph",
+                    "homepage": "https://www.drupal.org/user/2974359"
+                },
+                {
+                    "name": "skyredwang",
+                    "homepage": "https://www.drupal.org/user/228712"
+                },
+                {
+                    "name": "travis-bradbury",
+                    "homepage": "https://www.drupal.org/user/3226337"
+                }
+            ],
+            "description": "Provides a webform handler for posting webform submissions to Pardot.",
+            "homepage": "https://www.drupal.org/project/webform_pardot",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/webform_pardot.git",
+                "issues": "https://www.drupal.org/project/issues/webform_pardot"
             }
         },
         {
@@ -16554,6 +16626,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/webform_pardot": 10,
         "fivejars/drupal_starterkit": 20,
         "fivejars/drupal_starterkit_theme": 20,
         "fivejars/drupal-quality-check": 20

@@ -13,6 +13,7 @@
         "cweagans/composer-patches": "^1.5.0",
         "drupal/core-composer-scaffold": "^10.2",
         "drupal/core-recommended": "^10.2",
+        "drupal/webform_pardot": "^2.0@beta",
         "drush/drush": "^12.4",
         "fivejars/drupal_starterkit": "dev-master",
         "fivejars/drupal_starterkit_theme": "dev-main",
