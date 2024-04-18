@@ -16,36 +16,33 @@ pipeline {
     DB_DATA_VOLUME = "/home/jslave/dumps/dskit_demo/latest.sql.gz"
   }
   stages {
-      stage('Checkout') {
-          steps {
-              sh 'chmod -R +w ./* && rm -rf ./* || true'
-              checkout poll: false,
-                  scm: [
-                      $class: 'GitSCM',
-                      branches: [[name: '*/master']],
-                      extensions: [
-                          [$class: 'CheckoutOption']
-                      ],
-                      userRemoteConfigs: [[
-                          url: 'https://github.com/fivejars/drupal_starterkit_docksal.git'
-                      ]]
-                  ]
-              sh 'echo "VIRTUAL_HOST=\"$VIRTUAL_HOST\"" > .docksal/docksal-local.env'
-              sh 'echo "PROJECT_GIT_REMOTE=\"$PROJECT_GIT_REMOTE\"" >> .docksal/docksal-local.env'
-              sh 'echo "PROJECT_VERSION=\"$CHANGE_BRANCH\"" >> .docksal/docksal-local.env'
-          }
+    stage('pre-build') {
+      steps {
+        sh 'fin p rm -f || true'
+        sh 'fin up'
       }
-      stage('pre-build') {
-        steps {
-          sh 'fin p rm -f || true'
+    }
+    stage('Composer Validate') {
+      parallel {
+        stage('Composer Validate') {
+          steps {
+            sh 'fin composer validate'
+          }
+        }
+        stage('Composer Audit') {
+          steps {
+            catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+              sh 'fin composer audit --locked'
+            }
+          }
         }
       }
-      stage('build') {
-          steps {
-              sh 'fin build_project'
-              sh 'fin init'
-          }
-      }
+    }
+    stage('build') {
+        steps {
+            sh 'fin init'
+        }
+    }
   }
   post {
     success {

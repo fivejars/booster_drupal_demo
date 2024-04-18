@@ -1,0 +1,187 @@
+#!/usr/bin/env bash
+
+## Initialize a Docksal powered Drupal 8 site
+##
+## Usage: fin init
+
+# Abort if anything fails
+set -e
+
+# Include console colors
+CURRENT_DIR="$(dirname "$0")"
+source "$CURRENT_DIR/includes/colors.sh"
+
+#-------------------------- Settings --------------------------------
+
+# PROJECT_ROOT is passed from fin.
+# The following variables are configured in the '.env' file: DOCROOT, VIRTUAL_HOST.
+
+SITE_DIRECTORY="default"
+DOCROOT_PATH="${PROJECT_ROOT}/${DOCROOT}"
+SITEDIR_PATH="${DOCROOT_PATH}/sites/${SITE_DIRECTORY}"
+
+#-------------------------- END: Settings --------------------------------
+
+#-------------------------- Helper functions --------------------------------
+is_windows ()
+{
+	local res=$(uname | grep 'CYGWIN_NT')
+	if [[ "$res" != "" ]]; then
+		return 0
+	else
+		return 1
+	fi
+}
+
+# Copy a settings file.
+# Skips if the destination file already exists.
+# @param $1 source file
+# @param $2 destination file
+copy_settings_file()
+{
+  local source="$1"
+  local dest="$2"
+
+  if [[ ! -f $dest ]]; then
+    echo "Copying ${dest}..."
+    cp $source $dest
+	else
+		echo-yellow "${dest} already in place."
+	fi
+}
+
+#-------------------------- END: Helper functions --------------------------------
+
+#-------------------------- Functions --------------------------------
+
+# Initialize local settings files
+init_settings ()
+{
+  if [ -f ${SITEDIR_PATH}/settings.php ]; then
+	  rm ${SITEDIR_PATH}/settings.php
+  fi
+  copy_settings_file "${PROJECT_ROOT}/.docksal/files/default.settings.php" "${SITEDIR_PATH}/settings.php"
+
+
+  if [[ "$SITE_ENVIRONMENT" == "dev" ]]; then
+
+    if [ -f ${SITEDIR_PATH}/settings.local.php ]; then
+      rm ${SITEDIR_PATH}/settings.local.php
+    fi
+    copy_settings_file "${PROJECT_ROOT}/.docksal/files/development.settings.local.php" "${SITEDIR_PATH}/settings.local.php"
+  fi
+}
+
+# Install project dependencies
+install_dependencies ()
+{
+	echo-green "Install project dependencies"
+	cd $PROJECT_ROOT
+	time fin composer install --no-interaction
+
+	touch .env
+}
+
+# Setup project dependencies
+setup_project ()
+{
+	echo-green "Install site from distribution"
+	fin drush si --account-name=admin --account-pass=$ADMIN_PASSWORD -y
+
+	touch .env
+}
+
+# Setup theme
+setup_theme ()
+{
+  if [[ "$DEFAULT_THEME" != "" ]]; then
+    echo-green "Install and set default theme: {$DEFAULT_THEME}"
+    fin drush then $DEFAULT_THEME -y
+    fin drush config-set system.theme default $DEFAULT_THEME -y
+  fi
+}
+
+# Run deploy command
+deploy()
+{
+  echo "Deploying..."
+  cd $DOCROOT_PATH
+	fin drush deploy -y -l https://$VIRTUAL_HOST
+}
+
+# Fix file/folder permissions
+fix_permissions ()
+{
+	echo-green "Making site directory writable..."
+	chmod 755 "$SITEDIR_PATH"
+}
+
+# Import SQL dump
+import_database ()
+{
+  if [ -z $SKIP_DB_DATA_VOLUME_UPDATE ]; then
+    mkdir -p ${DB_DATA_VOLUME_DIR}
+    cd ${DB_DATA_VOLUME_DIR}
+    echo "Downloading a fresh database dump..."
+    time fin run-cli wget --no-check-certificate --http-user=${DUMP_USER} --http-password=${DUMP_PASS} -N ${DB_DATA_VOLUME_REMOTE}
+  fi
+
+  echo "Importing the database dump..."
+  fin db import ${DB_DATA_VOLUME}
+}
+
+reset_admin_password ()
+{
+  echo -e "Resetting Drupal Admin password..."
+  cd $DOCROOT_PATH
+  fin drush user:unblock admin
+  fin drush user:password admin $ADMIN_PASSWORD
+}
+
+#-------------------------- END: Functions --------------------------------
+
+#-------------------------- Execution --------------------------------
+
+if [[ "$PROJECT_ROOT" == "" ]]; then
+	echo-red "\$PROJECT_ROOT is not set"
+	exit 1
+fi
+
+# Project initialization steps
+echo -e "${green_bg} Step 1 ${NC}${green} Initializing local project configuration...${NC}"
+init_settings
+fix_permissions
+
+if [[ $DOCKER_RUNNING == "true" ]]; then
+	echo -e "${green_bg} Step 2 ${NC}${green} Recreating services...${NC}"
+	fin reset -f
+else
+	echo -e "${green_bg} Step 2 ${NC}${green} Creating services...${NC}"
+	fin up
+fi
+
+echo "Waiting 10s for MySQL to initialize...";
+sleep 10
+
+echo -e "${green_bg} Step 3 ${NC}${green} Installing project dependencies...${NC}"
+time install_dependencies
+
+echo -e "${green_bg} Step 4 ${NC}${green} Importing the database dump...${NC}"
+time import_database
+
+echo -e "${green_bg} Step 5 ${NC}${green} Deploying...${NC}"
+time deploy
+
+echo -e "${green_bg} Step 6 ${NC}${green} Resetting Drupal Admin password...${NC}"
+time reset_admin_password
+
+if is_windows; then
+	echo-green "Add ${VIRTUAL_HOST} to your hosts file (/etc/hosts), e.g.:"
+	echo-green "192.168.64.100 ${VIRTUAL_HOST}"
+	echo
+fi
+
+echo -en "${green_bg} DONE! ${NC} "
+echo -e "Open ${yellow}http://${VIRTUAL_HOST}${NC} in your browser to verify the setup."
+
+#-------------------------- END: Execution --------------------------------
