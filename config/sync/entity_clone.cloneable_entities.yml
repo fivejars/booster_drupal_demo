@@ -56,3 +56,4 @@ cloneable_entities:
   - webform_options
   - webform_submission
   - webform
+  - menu_link_content

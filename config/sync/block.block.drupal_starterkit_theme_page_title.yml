@@ -2,6 +2,8 @@ uuid: b6f9cec0-25dd-4b3a-95c2-bb1e7210106d
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - drupal_starterkit_theme
 _core:
@@ -9,7 +11,7 @@ _core:
 id: drupal_starterkit_theme_page_title
 theme: drupal_starterkit_theme
 region: header
-weight: -2
+weight: -1
 provider: null
 plugin: page_title_block
 settings:
@@ -17,4 +19,8 @@ settings:
   label: 'Page title'
   label_display: '0'
   provider: core
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

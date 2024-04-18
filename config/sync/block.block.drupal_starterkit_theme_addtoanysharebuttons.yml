@@ -1,0 +1,25 @@
+uuid: 8f369082-9e46-475c-b52f-b6d17c39c00f
+langcode: en
+status: true
+dependencies:
+  module:
+    - addtoany
+  theme:
+    - drupal_starterkit_theme
+id: drupal_starterkit_theme_addtoanysharebuttons
+theme: drupal_starterkit_theme
+region: footer
+weight: 0
+provider: null
+plugin: addtoany_block
+settings:
+  id: addtoany_block
+  label: 'AddToAny share buttons'
+  label_display: '0'
+  provider: addtoany
+  context_mapping: {  }
+  buttons_size: null
+  addtoany_html: ''
+  link_url: ''
+  link_title: ''
+visibility: {  }
