@@ -49,6 +49,3 @@ web/report/
 
 # Ignore database dumps
 dumps/
-
-# Ignore docksal settings
-.docksal/
