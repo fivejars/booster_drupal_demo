@@ -57,3 +57,4 @@ cloneable_entities:
   - webform_submission
   - webform
   - menu_link_content
+  - pardot_submission
