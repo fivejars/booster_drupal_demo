@@ -13,15 +13,55 @@ title: Advanced
 description: ''
 categories: {  }
 elements: |-
+  flexbox:
+    '#type': webform_flexbox
+    first_name:
+      '#type': textfield
+      '#title': 'First name'
+      '#required': true
+    last_name:
+      '#type': textfield
+      '#title': 'Last name'
+      '#states':
+        enabled:
+          ':input[name="first_name"]':
+            filled: true
   email_confirm:
     '#type': webform_email_confirm
     '#title': Email
     '#required': true
+  textarea:
+    '#type': textarea
+    '#title': Textarea
+    '#counter_type': character
+    '#counter_minimum': 10
+    '#counter_maximum': 1000
+  link_yo_your_website:
+    '#type': webform_link
+    '#title': 'Link to your website'
+    '#states':
+      enabled:
+        ':input[name="you_age"]':
+          value:
+            greater_equal: '18'
+    '#title__title': 'Title your website '
+    '#url__title': 'Link URL to your website'
   you_age:
     '#type': range
     '#title': 'You age'
+    '#attributes':
+      class:
+        - mb-5
     '#min': 1
     '#output': below
+  items:
+    '#type': textfield
+    '#title': Items
+    '#multiple': true
+    '#input_hide': true
+    '#multiple__sorting': false
+    '#multiple__operations': false
+    '#multiple__add_more_input': false
   avatar:
     '#type': webform_image_file
     '#title': Avatar
@@ -32,25 +72,67 @@ elements: |-
             less: '18'
     '#file_preview': 'browser_thumbnail:image'
     '#max_filesize': '20'
-  link_yo_your_website:
-    '#type': webform_link
-    '#title': 'Link yo your website'
-    '#states':
-      enabled:
-        ':input[name="you_age"]':
-          value:
-            greater_equal: '18'
-  gender:
-    '#type': radios
-    '#title': Gender
-    '#options': gender
-    '#options_display': two_columns
+  flexbox_01:
+    '#type': webform_flexbox
+    additional:
+      '#type': webform_section
+      '#title': Additional
+      '#attributes':
+        class:
+          - border
+          - border-2
+          - p-2
+          - ''
+      checkbox:
+        '#type': checkboxes
+        '#title': Checkbox
+        '#options':
+          1: 'Checkbox 1'
+          2: 'Checkbox 2'
+          3: 'Checkbox 3'
+      radio:
+        '#type': radios
+        '#title': Radio
+        '#options': sex
+        '#options_display': two_columns
+      phone:
+        '#type': tel
+        '#title': Phone
+        '#international': true
+    select_gender:
+      '#type': webform_autocomplete
+      '#title': Gender
+      '#autocomplete_items': gender
+      '#autocomplete_limit': 5
+      '#autocomplete_match': 1
   detail:
     '#type': details
     '#title': Detail
+    '#attributes':
+      class:
+        - mt-3
+        - shadow
+        - p-4
+    '#format': details-closed
+    '#format_attributes':
+      class:
+        - shadow
+        - p-4
+    color:
+      '#type': color
+      '#title': Color
+      '#attributes':
+        class:
+          - mt-4
+      '#label_attributes':
+        class:
+          - mt-4
     birthday:
       '#type': date
       '#title': Birthday
+    time:
+      '#type': webform_time
+      '#title': Time
     document:
       '#type': webform_document_file
       '#title': Document
