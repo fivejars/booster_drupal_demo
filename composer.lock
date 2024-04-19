@@ -8411,17 +8411,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fivejars/drupal_starterkit_theme.git",
-                "reference": "fdfb4d70de64170cbe83222bdff40713a7e5b633"
+                "reference": "9a35920f5bcc56ba3efd1c7d95f4fdf9099c155c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fivejars/drupal_starterkit_theme/zipball/fdfb4d70de64170cbe83222bdff40713a7e5b633",
-                "reference": "fdfb4d70de64170cbe83222bdff40713a7e5b633",
+                "url": "https://api.github.com/repos/fivejars/drupal_starterkit_theme/zipball/9a35920f5bcc56ba3efd1c7d95f4fdf9099c155c",
+                "reference": "9a35920f5bcc56ba3efd1c7d95f4fdf9099c155c",
                 "shasum": ""
             },
             "require": {
                 "cweagans/composer-patches": "^1.5.0",
-                "drupal/radix": "^6.0@beta"
+                "drupal/radix": "6.0.0-beta13"
             },
             "default-branch": true,
             "type": "drupal-theme",
@@ -8442,7 +8442,7 @@
                 "issues": "https://github.com/fivejars/drupal_starterkit_theme/issues",
                 "source": "https://github.com/fivejars/drupal_starterkit_theme/tree/main"
             },
-            "time": "2024-04-15T10:39:31+00:00"
+            "time": "2024-04-19T08:02:37+00:00"
         },
         {
             "name": "goalgorilla/rtseo.js",
