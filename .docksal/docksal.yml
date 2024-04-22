@@ -12,6 +12,7 @@ services:
       - SIMPLETEST_BASE_URL=http://${VIRTUAL_HOST}/
       - SITE_ENVIRONMENT
       - MYSQL_PORT
+      - OPENAI_API_KEY
   mail:
     extends:
       file: ${HOME}/.docksal/stacks/services.yml
