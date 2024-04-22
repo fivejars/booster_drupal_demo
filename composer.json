@@ -54,6 +54,9 @@
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
+            },
+            "file-mapping": {
+                "[web-root]/robots.txt": false
             }
         },
         "enable-patching": true,
@@ -88,7 +91,8 @@
         },
         "merge-plugin": {
             "include": [
-                "web/profiles/contrib/starterkit/composer.libraries.json"
+                "web/modules/*/*/composer.libraries.json",
+                "web/profiles/*/*/composer.libraries.json"
             ]
         }
     },

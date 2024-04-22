@@ -57,7 +57,7 @@ copy_settings_file()
 # Initialize local settings files
 init_settings ()
 {
-  if [ -f ${SITEDIR_PATH}/settings.php ]; then
+  if [ ! -f ${SITEDIR_PATH}/settings.php ]; then
     copy_settings_file "${PROJECT_ROOT}/.docksal/files/default.settings.php" "${SITEDIR_PATH}/settings.php"
   fi
 
@@ -106,6 +106,9 @@ deploy()
 # Fix file/folder permissions
 fix_permissions ()
 {
+  if [ ! -d ${SITEDIR_PATH} ]; then
+    mkdir -p ${SITEDIR_PATH}
+  fi
   echo-green "Making site directory writable..."
   chmod 755 "$SITEDIR_PATH"
 }
