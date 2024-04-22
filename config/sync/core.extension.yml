@@ -79,6 +79,8 @@ module:
   metatag: 0
   mysql: 0
   node: 0
+  openai: 0
+  openai_ckeditor: 0
   options: 0
   page_cache: 0
   password_policy_characters: 0
