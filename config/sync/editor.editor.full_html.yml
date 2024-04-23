@@ -44,6 +44,7 @@ settings:
       - blockQuote
       - insertTable
       - media_directories
+      - pdf
       - iframeEmbed
       - openai
       - horizontalLine
