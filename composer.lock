@@ -8497,7 +8497,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fivejars/drupal_starterkit.git",
-                "reference": "f8b7fce0c43bc56ac8ff96de04947d81e6be56e7"
+                "reference": "09175fdd055640b3abd1e4cecf0d31c85bce486d"
             },
             "dist": {
                 "type": "zip",
@@ -8603,7 +8603,7 @@
                 "issues": "https://github.com/fivejars/drupal_starterkit/issues",
                 "source": "https://github.com/fivejars/drupal_starterkit/tree/master"
             },
-            "time": "2024-04-22T10:55:30+00:00"
+            "time": "2024-04-23T07:38:35+00:00"
         },
         {
             "name": "fivejars/drupal_starterkit_theme",
@@ -8611,7 +8611,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fivejars/drupal_starterkit_theme.git",
-                "reference": "9a35920f5bcc56ba3efd1c7d95f4fdf9099c155c"
+                "reference": "69974132ee3a48807776bf3ad1cc1d3c993c9b39"
             },
             "dist": {
                 "type": "zip",
@@ -8642,7 +8642,7 @@
                 "issues": "https://github.com/fivejars/drupal_starterkit_theme/issues",
                 "source": "https://github.com/fivejars/drupal_starterkit_theme/tree/main"
             },
-            "time": "2024-04-19T08:02:37+00:00"
+            "time": "2024-04-23T07:38:09+00:00"
         },
         {
             "name": "goalgorilla/rtseo.js",

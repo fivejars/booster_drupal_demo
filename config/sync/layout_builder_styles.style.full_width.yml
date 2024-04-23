@@ -1,0 +1,13 @@
+uuid: 52a4c209-5b7f-43ba-aeab-a9874f432d1e
+langcode: en
+status: true
+dependencies: {  }
+id: full_width
+label: 'Full width'
+classes: full-width
+type: section
+group: default
+block_restrictions: {  }
+layout_restrictions:
+  - layout_onecol
+weight: 0
