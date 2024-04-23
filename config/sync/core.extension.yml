@@ -20,6 +20,7 @@ module:
   ckeditor_font: 0
   ckeditor_iframe: 0
   ckeditor_media_embed: 0
+  ckeditor_media_resize: 0
   coffee: 0
   config: 0
   config_ignore: 0
