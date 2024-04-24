@@ -2400,6 +2400,59 @@
             }
         },
         {
+            "name": "drupal/ckeditor_media_resize",
+            "version": "1.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_media_resize.git",
+                "reference": "1.0.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_media_resize-1.0.0-beta1.zip",
+                "reference": "1.0.0-beta1",
+                "shasum": "84fed6d2eeb21e9b82c362a1280650821605e177"
+            },
+            "require": {
+                "drupal/core": "^9.4 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-beta1",
+                    "datestamp": "1699120747",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Leu",
+                    "homepage": "https://www.drupal.org/u/s_leu",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "s_leu",
+                    "homepage": "https://www.drupal.org/user/1336864"
+                },
+                {
+                    "name": "Tim Bozeman",
+                    "homepage": "https://www.drupal.org/user/2241356"
+                }
+            ],
+            "description": "Provides a ckeditor5 plugin that allows resizing of embedded image media.",
+            "homepage": "https://drupal.org/project/ckeditor_media_resize",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ckeditor_media_resize"
+            }
+        },
+        {
             "name": "drupal/coffee",
             "version": "1.4.0",
             "source": {
@@ -6216,6 +6269,66 @@
             }
         },
         {
+            "name": "drupal/pdf_reader",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/pdf_reader.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/pdf_reader-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "61020bcd5da140ff16524c3cd1f263a5bf12e197"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1696945671",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "anmolgoyal74",
+                    "homepage": "https://www.drupal.org/user/3560428"
+                },
+                {
+                    "name": "lsolesen",
+                    "homepage": "https://www.drupal.org/user/527206"
+                },
+                {
+                    "name": "Nitesh Pawar",
+                    "homepage": "https://www.drupal.org/user/1069334"
+                },
+                {
+                    "name": "penyaskito",
+                    "homepage": "https://www.drupal.org/user/959536"
+                },
+                {
+                    "name": "victorcoder",
+                    "homepage": "https://www.drupal.org/user/405982"
+                }
+            ],
+            "description": "Create a new display format for the field that render the pdf file using PDF Reader.",
+            "homepage": "https://www.drupal.org/project/pdf_reader",
+            "support": {
+                "source": "https://git.drupalcode.org/project/pdf_reader"
+            }
+        },
+        {
             "name": "drupal/radix",
             "version": "6.0.0-beta13",
             "source": {
@@ -8497,12 +8610,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fivejars/drupal_starterkit.git",
-                "reference": "09175fdd055640b3abd1e4cecf0d31c85bce486d"
+                "reference": "cf6a93c173e3fedbc1f706c5c9a3a396a6622be8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fivejars/drupal_starterkit/zipball/f8b7fce0c43bc56ac8ff96de04947d81e6be56e7",
-                "reference": "f8b7fce0c43bc56ac8ff96de04947d81e6be56e7",
+                "url": "https://api.github.com/repos/fivejars/drupal_starterkit/zipball/cf6a93c173e3fedbc1f706c5c9a3a396a6622be8",
+                "reference": "cf6a93c173e3fedbc1f706c5c9a3a396a6622be8",
                 "shasum": ""
             },
             "require": {
@@ -8518,6 +8631,7 @@
                 "drupal/ckeditor_font": "^2.0@beta",
                 "drupal/ckeditor_iframe": "^3.0@alpha",
                 "drupal/ckeditor_media_embed": "^2.0@alpha",
+                "drupal/ckeditor_media_resize": "^1.0@beta",
                 "drupal/coffee": "^1.2",
                 "drupal/config_ignore": "^3.2",
                 "drupal/config_split": "^2.0",
@@ -8556,6 +8670,7 @@
                 "drupal/openai": "^1.0@beta",
                 "drupal/password_policy": "^4.0",
                 "drupal/pathauto": "^1.12",
+                "drupal/pdf_reader": "^1.1",
                 "drupal/redirect": "^1.9",
                 "drupal/redis": "^1.7",
                 "drupal/responsive_tables_filter": "^1.18",
@@ -8586,11 +8701,21 @@
                 "enable-patching": true,
                 "installer-name": "starterkit",
                 "patches": {
+                    "drupal/ckeditor_media_resize": {
+                        "Issue #3380686: Unable to install due to unmet dependencies": "https://www.drupal.org/files/issues/2024-04-23/3380686__13.patch"
+                    },
+                    "drupal/entity_browser": {
+                        "Issue #2922885 by CHiLi.HH, oknate, l0ke: Provide upload widget for media of media type file": "https://www.drupal.org/files/issues/2019-02-28/entity_browser-media-file-upload-2922885-15.patch",
+                        "Issue #3104901: Entity Browser used in a entity referenced field of a layout builder custom block is not working": "https://www.drupal.org/files/issues/2024-04-24/3104901-31_0.patch"
+                    },
                     "drupal/layout_builder_browser": {
                         "Issue #3351131: Block links displaying inline in off-canvas list": "https://www.drupal.org/files/issues/2023-05-03/3351131-6.patch"
                     },
                     "drupal/openai": {
                         "Issue #3404972: OpenAI CKEditor - On error, content should not be replaced": "https://git.drupalcode.org/project/openai/-/merge_requests/77.patch"
+                    },
+                    "drupal/pdf_reader": {
+                        "Issue #1293136: Percent instead of width and height": "https://www.drupal.org/files/issues/2024-04-22/1293136__6.patch"
                     }
                 }
             },
@@ -8603,7 +8728,7 @@
                 "issues": "https://github.com/fivejars/drupal_starterkit/issues",
                 "source": "https://github.com/fivejars/drupal_starterkit/tree/master"
             },
-            "time": "2024-04-23T07:38:35+00:00"
+            "time": "2024-04-24T09:22:12+00:00"
         },
         {
             "name": "fivejars/drupal_starterkit_theme",
