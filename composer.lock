@@ -3109,52 +3109,6 @@
             }
         },
         {
-            "name": "drupal/d8w3css",
-            "version": "2.0.13",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/d8w3css.git",
-                "reference": "2.0.13"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/d8w3css-2.0.13.zip",
-                "reference": "2.0.13",
-                "shasum": "9c8cc77777aa33b3f5b5f1b28d094f48c44d4271"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9 || ^10"
-            },
-            "type": "drupal-theme",
-            "extra": {
-                "drupal": {
-                    "version": "2.0.13",
-                    "datestamp": "1707087511",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Alaa Haddad (alaahaddad.com)",
-                    "homepage": "https://www.drupal.org/u/flashwebcenter",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "Speed, Elegance & Ease of Development and Use.",
-            "homepage": "https://drupal.org/project/d8w3css",
-            "support": {
-                "source": "https://git.drupalcode.org/project/d8w3css",
-                "issues": "https://drupal.org/project/issues/d8w3css"
-            }
-        },
-        {
             "name": "drupal/default_content",
             "version": "2.0.0-alpha2",
             "source": {
@@ -8610,12 +8564,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fivejars/drupal_starterkit.git",
-                "reference": "cf6a93c173e3fedbc1f706c5c9a3a396a6622be8"
+                "reference": "50f6bfb640fdd5f1f12dafedb4e58cb7db93e3c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fivejars/drupal_starterkit/zipball/cf6a93c173e3fedbc1f706c5c9a3a396a6622be8",
-                "reference": "cf6a93c173e3fedbc1f706c5c9a3a396a6622be8",
+                "url": "https://api.github.com/repos/fivejars/drupal_starterkit/zipball/50f6bfb640fdd5f1f12dafedb4e58cb7db93e3c2",
+                "reference": "50f6bfb640fdd5f1f12dafedb4e58cb7db93e3c2",
                 "shasum": ""
             },
             "require": {
@@ -8635,7 +8589,6 @@
                 "drupal/coffee": "^1.2",
                 "drupal/config_ignore": "^3.2",
                 "drupal/config_split": "^2.0",
-                "drupal/d8w3css": "^2.0",
                 "drupal/default_content": "^2.0@alpha",
                 "drupal/diff": "^1.0",
                 "drupal/dropzonejs": "^2.10",
@@ -8716,6 +8669,9 @@
                     },
                     "drupal/pdf_reader": {
                         "Issue #1293136: Percent instead of width and height": "https://www.drupal.org/files/issues/2024-04-22/1293136__6.patch"
+                    },
+                    "drupal/core": {
+                        "3075236 - jQuery UI dialog modals repositions incorrectly on window resize when there is a off canvas rendered": "https://www.drupal.org/files/issues/2023-07-18/3075236-39.patch"
                     }
                 }
             },
@@ -8728,7 +8684,7 @@
                 "issues": "https://github.com/fivejars/drupal_starterkit/issues",
                 "source": "https://github.com/fivejars/drupal_starterkit/tree/master"
             },
-            "time": "2024-04-24T09:22:12+00:00"
+            "time": "2024-04-25T16:02:25+00:00"
         },
         {
             "name": "fivejars/drupal_starterkit_theme",
