@@ -1,4 +1,4 @@
-uuid: 56180b94-f467-44ce-aa18-a99f495ec247
+uuid: 56180b94-f467-44ce-aa18-a99f495ec248
 langcode: en
 status: true
 dependencies:
@@ -24,8 +24,8 @@ dependencies:
     - toolbar
     - webform
     - yoast_seo
-id: webform_admin
-label: 'Webform admin'
+id: webform_manager
+label: 'Webform Manager'
 weight: 3
 is_admin: false
 permissions:
