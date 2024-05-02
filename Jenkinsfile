@@ -4,15 +4,15 @@ pipeline {
   agent {
     node {
       label 'slave'
-      customWorkspace 'builds/dskit_demo/dskit_demo-' + env.BRANCH_NAME
+      customWorkspace 'builds/booster_drupal_demo/booster_drupal_demo-' + env.BRANCH_NAME
     }
   }
   environment {
-    VIRTUAL_HOST = "${BRANCH_NAME.toLowerCase()}.dskit-demo.${VIRTUAL_HOST_BASE}"
+    VIRTUAL_HOST = "${BRANCH_NAME.toLowerCase()}.demo.booster.drupal.${VIRTUAL_HOST_BASE}"
     BUILD_URL = "http://${VIRTUAL_HOST}/"
-    COMMENT_URL = "https://api.github.com/repos/fivejars/drupal_starterkit_demo/issues/${CHANGE_ID}/comments"
+    COMMENT_URL = "https://api.github.com/repos/fivejars/booster_drupal_demo/issues/${CHANGE_ID}/comments"
     SKIP_DB_DATA_VOLUME_UPDATE = 1
-    DB_DATA_VOLUME = "/home/jslave/dumps/dskit_demo/latest.sql.gz"
+    DB_DATA_VOLUME = "/home/jslave/dumps/booster_drupal_demo/latest.sql.gz"
   }
   stages {
     stage('pre-build') {

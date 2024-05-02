@@ -1,0 +1,22 @@
+uuid: ac69dfdb-2341-4152-b17b-f5b7bc4cdd3d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - booster_theme
+_core:
+  default_config_hash: 78nik7vXxzMsRZ2P0lHvobMJQQIxrrTo21gLmafbuoE
+id: booster_theme_breadcrumbs
+theme: booster_theme
+region: header
+weight: -5
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

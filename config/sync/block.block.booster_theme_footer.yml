@@ -1,4 +1,4 @@
-uuid: deca02a2-ca24-48e1-a856-14ee3755a733
+uuid: 9c932ee8-76f2-4f71-9798-672528d9a3be
 langcode: en
 status: true
 dependencies:
@@ -7,13 +7,13 @@ dependencies:
   module:
     - system
   theme:
-    - drupal_starterkit_theme
+    - booster_theme
 _core:
-  default_config_hash: d9DptoQEZUmABTGV1l5KvBxjw_XcOVr3S8-O5svNvMw
-id: drupal_starterkit_theme_footer
-theme: drupal_starterkit_theme
+  default_config_hash: eCPvRI5jaMitVJfKyis4N2UjWtZ_XabviJnuuwPF74Q
+id: booster_theme_footer
+theme: booster_theme
 region: footer
-weight: -4
+weight: -5
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

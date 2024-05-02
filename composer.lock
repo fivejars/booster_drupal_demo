@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8490566e0bb15123ff4f8ee07d2375e9",
+    "content-hash": "f74f814ea5ecf7f27ee9c9246822f56f",
     "packages": [
         {
             "name": "algolia/places",
@@ -76,6 +76,155 @@
                 "source": "https://github.com/asm89/stack-cors/tree/v2.2.0"
             },
             "time": "2023-11-14T13:51:46+00:00"
+        },
+        {
+            "name": "aws/aws-crt-php",
+            "version": "v1.2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/awslabs/aws-crt-php.git",
+                "reference": "0ea1f04ec5aa9f049f97e012d1ed63b76834a31b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/awslabs/aws-crt-php/zipball/0ea1f04ec5aa9f049f97e012d1ed63b76834a31b",
+                "reference": "0ea1f04ec5aa9f049f97e012d1ed63b76834a31b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35||^5.6.3||^9.5",
+                "yoast/phpunit-polyfills": "^1.0"
+            },
+            "suggest": {
+                "ext-awscrt": "Make sure you install awscrt native extension to use any of the functionality."
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "AWS SDK Common Runtime Team",
+                    "email": "aws-sdk-common-runtime@amazon.com"
+                }
+            ],
+            "description": "AWS Common Runtime for PHP",
+            "homepage": "https://github.com/awslabs/aws-crt-php",
+            "keywords": [
+                "amazon",
+                "aws",
+                "crt",
+                "sdk"
+            ],
+            "support": {
+                "issues": "https://github.com/awslabs/aws-crt-php/issues",
+                "source": "https://github.com/awslabs/aws-crt-php/tree/v1.2.5"
+            },
+            "time": "2024-04-19T21:30:56+00:00"
+        },
+        {
+            "name": "aws/aws-sdk-php",
+            "version": "3.305.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aws/aws-sdk-php.git",
+                "reference": "f4108b0222fdc0f0d96c5dbc8055b957d06f1cae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/f4108b0222fdc0f0d96c5dbc8055b957d06f1cae",
+                "reference": "f4108b0222fdc0f0d96c5dbc8055b957d06f1cae",
+                "shasum": ""
+            },
+            "require": {
+                "aws/aws-crt-php": "^1.2.3",
+                "ext-json": "*",
+                "ext-pcre": "*",
+                "ext-simplexml": "*",
+                "guzzlehttp/guzzle": "^6.5.8 || ^7.4.5",
+                "guzzlehttp/promises": "^1.4.0 || ^2.0",
+                "guzzlehttp/psr7": "^1.9.1 || ^2.4.5",
+                "mtdowling/jmespath.php": "^2.6",
+                "php": ">=7.2.5",
+                "psr/http-message": "^1.0 || ^2.0"
+            },
+            "require-dev": {
+                "andrewsville/php-token-reflection": "^1.4",
+                "aws/aws-php-sns-message-validator": "~1.0",
+                "behat/behat": "~3.0",
+                "composer/composer": "^1.10.22",
+                "dms/phpunit-arraysubset-asserts": "^0.4.0",
+                "doctrine/cache": "~1.4",
+                "ext-dom": "*",
+                "ext-openssl": "*",
+                "ext-pcntl": "*",
+                "ext-sockets": "*",
+                "nette/neon": "^2.3",
+                "paragonie/random_compat": ">= 2",
+                "phpunit/phpunit": "^5.6.3 || ^8.5 || ^9.5",
+                "psr/cache": "^1.0",
+                "psr/simple-cache": "^1.0",
+                "sebastian/comparator": "^1.2.3 || ^4.0",
+                "yoast/phpunit-polyfills": "^1.0"
+            },
+            "suggest": {
+                "aws/aws-php-sns-message-validator": "To validate incoming SNS notifications",
+                "doctrine/cache": "To use the DoctrineCacheAdapter",
+                "ext-curl": "To send requests using cURL",
+                "ext-openssl": "Allows working with CloudFront private distributions and verifying received SNS messages",
+                "ext-sockets": "To use client-side monitoring"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "Aws\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Amazon Web Services",
+                    "homepage": "http://aws.amazon.com"
+                }
+            ],
+            "description": "AWS SDK for PHP - Use Amazon Web Services in your PHP project",
+            "homepage": "http://aws.amazon.com/sdkforphp",
+            "keywords": [
+                "amazon",
+                "aws",
+                "cloud",
+                "dynamodb",
+                "ec2",
+                "glacier",
+                "s3",
+                "sdk"
+            ],
+            "support": {
+                "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
+                "issues": "https://github.com/aws/aws-sdk-php/issues",
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.305.7"
+            },
+            "time": "2024-05-01T18:05:51+00:00"
         },
         {
             "name": "caxy/php-htmldiff",
@@ -5336,6 +5485,10 @@
             ],
             "authors": [
                 {
+                    "name": "bohart",
+                    "homepage": "https://www.drupal.org/user/289861"
+                },
+                {
                     "name": "Chesterr",
                     "homepage": "https://www.drupal.org/user/3715674"
                 },
@@ -6012,6 +6165,80 @@
                 "source": "https://git.drupalcode.org/project/metatag",
                 "issues": "https://www.drupal.org/project/issues/metatag",
                 "docs": "https://www.drupal.org/docs/8/modules/metatag"
+            }
+        },
+        {
+            "name": "drupal/metatag_ai",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/metatag_ai.git",
+                "reference": "1.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/metatag_ai-1.0.1.zip",
+                "reference": "1.0.1",
+                "shasum": "912c03c1633d95bb0fe869376ef83aaf916da846"
+            },
+            "require": {
+                "aws/aws-sdk-php": "^3",
+                "drupal/core": "^9 || ^10",
+                "drupal/metatag": "^2 || ^1.2"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.1",
+                    "datestamp": "1706711949",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Rachel Jaro (nx2611)",
+                    "homepage": "https://www.drupal.org/u/nx2611",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "johnlutz",
+                    "homepage": "https://www.drupal.org/user/162123"
+                },
+                {
+                    "name": "Luukyb",
+                    "homepage": "https://www.drupal.org/user/692278"
+                },
+                {
+                    "name": "nx2611",
+                    "homepage": "https://www.drupal.org/user/3737049"
+                },
+                {
+                    "name": "Promet Source",
+                    "homepage": "https://www.drupal.org/user/922144"
+                },
+                {
+                    "name": "PrometSource",
+                    "homepage": "https://www.drupal.org/user/3528162"
+                }
+            ],
+            "description": "Metatag AI Generator.",
+            "homepage": "https://www.drupal.org/project/metatag_ai",
+            "keywords": [
+                "Drupal",
+                "metatag",
+                "openai",
+                "seo"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/metatag_ai",
+                "issues": "https://www.drupal.org/project/issues/metatag_ai"
             }
         },
         {
@@ -8559,17 +8786,17 @@
             "time": "2023-06-20T07:10:35+00:00"
         },
         {
-            "name": "fivejars/drupal_starterkit",
-            "version": "dev-master",
+            "name": "fivejars/booster_drupal",
+            "version": "1.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fivejars/drupal_starterkit.git",
-                "reference": "50f6bfb640fdd5f1f12dafedb4e58cb7db93e3c2"
+                "url": "https://github.com/fivejars/booster_drupal.git",
+                "reference": "6004e57dfe95d7188824011ba4c3011354933f46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fivejars/drupal_starterkit/zipball/50f6bfb640fdd5f1f12dafedb4e58cb7db93e3c2",
-                "reference": "50f6bfb640fdd5f1f12dafedb4e58cb7db93e3c2",
+                "url": "https://api.github.com/repos/fivejars/booster_drupal/zipball/6004e57dfe95d7188824011ba4c3011354933f46",
+                "reference": "6004e57dfe95d7188824011ba4c3011354933f46",
                 "shasum": ""
             },
             "require": {
@@ -8620,6 +8847,7 @@
                 "drupal/media_directories": "^2.1@beta",
                 "drupal/memcache": "^2.5",
                 "drupal/metatag": "^2.0",
+                "drupal/metatag_ai": "^1.0",
                 "drupal/openai": "^1.0@beta",
                 "drupal/password_policy": "^4.0",
                 "drupal/pathauto": "^1.12",
@@ -8652,7 +8880,7 @@
             "type": "drupal-profile",
             "extra": {
                 "enable-patching": true,
-                "installer-name": "starterkit",
+                "installer-name": "booster",
                 "patches": {
                     "drupal/ckeditor_media_resize": {
                         "Issue #3380686: Unable to install due to unmet dependencies": "https://www.drupal.org/files/issues/2024-04-23/3380686__13.patch"
@@ -8679,25 +8907,25 @@
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "description": "FiveJars StarterKit distribution",
+            "description": "Booster Drupal distribution",
             "support": {
-                "issues": "https://github.com/fivejars/drupal_starterkit/issues",
-                "source": "https://github.com/fivejars/drupal_starterkit/tree/master"
+                "issues": "https://github.com/fivejars/booster_drupal/issues",
+                "source": "https://github.com/fivejars/booster_drupal/tree/1.x"
             },
-            "time": "2024-04-25T16:02:25+00:00"
+            "time": "2024-05-02T11:23:19+00:00"
         },
         {
-            "name": "fivejars/drupal_starterkit_theme",
-            "version": "dev-main",
+            "name": "fivejars/booster_drupal_theme",
+            "version": "1.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fivejars/drupal_starterkit_theme.git",
-                "reference": "d10adb4405ca5c64be33be51f17ca521c9e67883"
+                "url": "https://github.com/fivejars/booster_drupal_theme.git",
+                "reference": "4270c6a16771aa640ec697c844242ae1679171bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fivejars/drupal_starterkit_theme/zipball/d10adb4405ca5c64be33be51f17ca521c9e67883",
-                "reference": "d10adb4405ca5c64be33be51f17ca521c9e67883",
+                "url": "https://api.github.com/repos/fivejars/booster_drupal_theme/zipball/4270c6a16771aa640ec697c844242ae1679171bc",
+                "reference": "4270c6a16771aa640ec697c844242ae1679171bc",
                 "shasum": ""
             },
             "require": {
@@ -8708,6 +8936,7 @@
             "type": "drupal-theme",
             "extra": {
                 "enable-patching": true,
+                "installer-name": "booster_theme",
                 "patches": {
                     "drupal/radix": {
                         "Issue #3439449: Drupal\\sdc\\Exception\\InvalidComponentException: [type] NULL value found, but a string or an object is required. (status message)": "https://www.drupal.org/files/issues/2024-04-15/3439449__4.patch"
@@ -8718,12 +8947,12 @@
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "description": "Theme for FiveJars StarterKit distribution.",
+            "description": "Theme for Booster Drupal distribution.",
             "support": {
-                "issues": "https://github.com/fivejars/drupal_starterkit_theme/issues",
-                "source": "https://github.com/fivejars/drupal_starterkit_theme/tree/main"
+                "issues": "https://github.com/fivejars/booster_drupal_theme/issues",
+                "source": "https://github.com/fivejars/booster_drupal_theme/tree/1.x"
             },
-            "time": "2024-04-24T16:16:23+00:00"
+            "time": "2024-05-02T10:11:36+00:00"
         },
         {
             "name": "goalgorilla/rtseo.js",
@@ -9801,6 +10030,72 @@
                 "source": "https://github.com/mkalkbrenner/php-htmldiff/tree/master"
             },
             "time": "2016-07-25T17:07:32+00:00"
+        },
+        {
+            "name": "mtdowling/jmespath.php",
+            "version": "2.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jmespath/jmespath.php.git",
+                "reference": "bbb69a935c2cbb0c03d7f481a238027430f6440b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jmespath/jmespath.php/zipball/bbb69a935c2cbb0c03d7f481a238027430f6440b",
+                "reference": "bbb69a935c2cbb0c03d7f481a238027430f6440b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2.5 || ^8.0",
+                "symfony/polyfill-mbstring": "^1.17"
+            },
+            "require-dev": {
+                "composer/xdebug-handler": "^3.0.3",
+                "phpunit/phpunit": "^8.5.33"
+            },
+            "bin": [
+                "bin/jp.php"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/JmesPath.php"
+                ],
+                "psr-4": {
+                    "JmesPath\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Graham Campbell",
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
+                },
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Declaratively specify how to extract elements from a JSON document",
+            "keywords": [
+                "json",
+                "jsonpath"
+            ],
+            "support": {
+                "issues": "https://github.com/jmespath/jmespath.php/issues",
+                "source": "https://github.com/jmespath/jmespath.php/tree/2.7.0"
+            },
+            "time": "2023-08-25T10:54:48+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -17348,8 +17643,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/webform_pardot": 10,
-        "fivejars/drupal_starterkit": 20,
-        "fivejars/drupal_starterkit_theme": 20,
+        "fivejars/booster_drupal": 20,
+        "fivejars/booster_drupal_theme": 20,
         "fivejars/drupal-quality-check": 20
     },
     "prefer-stable": true,

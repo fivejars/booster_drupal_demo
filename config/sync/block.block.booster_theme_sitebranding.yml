@@ -1,13 +1,15 @@
-uuid: bb46b81a-fe7e-4588-bf47-b637b5210547
+uuid: 0d32fe3f-6738-4bf8-bc3a-4c7fdac3bdca
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - drupal_starterkit_theme
-id: drupal_starterkit_theme_sitebranding
-theme: drupal_starterkit_theme
+    - booster_theme
+_core:
+  default_config_hash: qWBS5TnMPJ6QkjCp9wMYWtwUHpY8BUz0i8u-VDVmiQA
+id: booster_theme_sitebranding
+theme: booster_theme
 region: footer
 weight: -5
 provider: null

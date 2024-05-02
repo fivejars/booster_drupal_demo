@@ -1,4 +1,4 @@
-uuid: 4a3df292-701b-44bf-be9a-85d257dcf8ad
+uuid: 4a3df292-701b-44bf-be9a-85d257dcf8aa
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,9 @@ dependencies:
   module:
     - block_content
   theme:
-    - drupal_starterkit_theme
-id: drupal_starterkit_theme_copyrightblock
-theme: drupal_starterkit_theme
+    - booster_theme
+id: booster_theme_copyright
+theme: booster_theme
 region: footer
 weight: 0
 provider: null

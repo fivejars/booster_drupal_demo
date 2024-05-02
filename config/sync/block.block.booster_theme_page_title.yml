@@ -1,0 +1,20 @@
+uuid: ab2e6eba-9860-4650-92c4-b8b9351ec216
+langcode: en
+status: true
+dependencies:
+  theme:
+    - booster_theme
+_core:
+  default_config_hash: lWCBQpCniNj0JDzNvy9Lw5-Ub7XQpTao_aCLdKAIEb0
+id: booster_theme_page_title
+theme: booster_theme
+region: header
+weight: -2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

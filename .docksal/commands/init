@@ -95,6 +95,21 @@ setup_theme ()
   fi
 }
 
+# Build theme
+build_theme ()
+{
+  if [[ -d "${DOCROOT_PATH}/themes/contrib/booster_theme/" ]]; then
+    echo-green "Build default theme: Booster Theme"
+    cd "${DOCROOT_PATH}/themes/contrib/booster_theme/"
+
+    fin exec npm i --no-audit --maxsockets 1
+    fin exec npm run production
+    rm -rf node_modules
+
+    cd "${DOCROOT_PATH}"
+  fi
+}
+
 # Run deploy command
 deploy()
 {
@@ -162,6 +177,7 @@ sleep 10
 
 echo -e "${green_bg} Step 3 ${NC}${green} Installing project dependencies...${NC}"
 time install_dependencies
+time build_theme
 
 echo -e "${green_bg} Step 4 ${NC}${green} Importing the database dump...${NC}"
 time import_database

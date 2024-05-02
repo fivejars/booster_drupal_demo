@@ -3,11 +3,8 @@ langcode: en
 status: true
 dependencies:
   module:
-    - media
     - sitemap
     - system
-_core:
-  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous
 label: Anonymous
 weight: 0
@@ -15,4 +12,3 @@ is_admin: false
 permissions:
   - 'access content'
   - 'access sitemap'
-  - 'view media'

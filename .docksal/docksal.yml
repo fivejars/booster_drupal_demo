@@ -2,6 +2,8 @@ version: "3.9"
 
 services:
   cli:
+    image: booster_drupal/cli
+    build: services/cli
     extends:
       file: ${HOME}/.docksal/stacks/services.yml
       service: cli

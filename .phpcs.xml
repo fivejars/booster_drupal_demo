@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ruleset name="StarterKit">
-  <description>PHP Code Sniffer configuration for StarterKit.</description>
+  <description>PHP Code Sniffer configuration for Booster Demo project.</description>
   <arg name="colors"/>
   <arg value="s" />
   <arg name="cache" value=".phpcs-cache"/>

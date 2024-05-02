@@ -1,12 +1,12 @@
 {
-    "name": "fivejars/drupal_starterkit_demo",
-    "description": "Demo project based on FiveJars StarterKit distribution.",
+    "name": "fivejars/booster_drupal_demo",
+    "description": "Demo project based on Booster Drupal distribution.",
     "license": "GPL-2.0-or-later",
     "type": "project",
-    "homepage": "https://github.com/fivejars/drupal_starterkit_demo",
+    "homepage": "https://github.com/fivejars/booster_drupal_demo",
     "support": {
-        "issues": "https://github.com/fivejars/drupal_starterkit_demo/issues",
-        "source": "https://github.com/fivejars/drupal_starterkit_demo"
+        "issues": "https://github.com/fivejars/booster_drupal_demo/issues",
+        "source": "https://github.com/fivejars/booster_drupal_demo"
     },
     "require": {
         "composer/installers": "^2.0",
@@ -15,8 +15,8 @@
         "drupal/core-recommended": "^10.2",
         "drupal/webform_pardot": "^2.0@beta",
         "drush/drush": "^12.4",
-        "fivejars/drupal_starterkit": "dev-master",
-        "fivejars/drupal_starterkit_theme": "dev-main",
+        "fivejars/booster_drupal": "1.x-dev",
+        "fivejars/booster_drupal_theme": "1.x-dev",
         "wikimedia/composer-merge-plugin": "^2.1"
     },
     "require-dev": {

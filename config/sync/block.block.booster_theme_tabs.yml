@@ -1,13 +1,13 @@
-uuid: d8d9cbc7-ae4f-4b46-a490-3602ca8690b2
+uuid: 9f615017-e543-46ae-819e-71c4e35b9243
 langcode: en
 status: true
 dependencies:
   theme:
-    - drupal_starterkit_theme
+    - booster_theme
 _core:
-  default_config_hash: HFcqa2p_Ha-wnU277tXZi3Ml1bevD8mvZrtUAouVjLM
-id: drupal_starterkit_theme_tabs
-theme: drupal_starterkit_theme
+  default_config_hash: HYPdo0VeQ7mwZhzx-ReS2ssaGQOD6rbyOS6Gz3qxKm0
+id: booster_theme_tabs
+theme: booster_theme
 region: header
 weight: 0
 provider: null

@@ -1,4 +1,4 @@
-uuid: 57882ead-5d2a-4119-a262-03c5d0649d71
+uuid: cd58dbb0-d7d8-4d51-bc65-ff91c25f4e1a
 langcode: en
 status: true
 dependencies:
@@ -43,8 +43,8 @@ dependencies:
     - taxonomy
     - toolbar
     - yoast_seo
-id: content_moderator
-label: Supervisor
+id: editor
+label: Editor
 weight: 3
 is_admin: false
 permissions:

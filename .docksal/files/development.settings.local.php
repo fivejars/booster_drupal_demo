@@ -48,4 +48,5 @@ $config["config_split.config_split.dev"]["status"] = TRUE;
  */
 if (getenv('OPENAI_API_KEY')) {
   $config["openai.settings"]["api_key"] = getenv('OPENAI_API_KEY');
+  $config["metatag_ai.settings"]["metatag_ai"]["metatagai_token"] = getenv('OPENAI_API_KEY');
 }

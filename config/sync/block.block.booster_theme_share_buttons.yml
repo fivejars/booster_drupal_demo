@@ -1,13 +1,15 @@
-uuid: 8f369082-9e46-475c-b52f-b6d17c39c00f
+uuid: be3f63df-8f58-467d-8886-e2f2568f9942
 langcode: en
 status: true
 dependencies:
   module:
     - addtoany
   theme:
-    - drupal_starterkit_theme
-id: drupal_starterkit_theme_addtoanysharebuttons
-theme: drupal_starterkit_theme
+    - booster_theme
+_core:
+  default_config_hash: MWtk_r9hLUsGQx0gpCNWKtLFaiE1wTcmgB-mgRmSjcw
+id: booster_theme_share_buttons
+theme: booster_theme
 region: footer
 weight: 0
 provider: null
@@ -17,9 +19,9 @@ settings:
   label: 'AddToAny share buttons'
   label_display: '0'
   provider: addtoany
-  context_mapping: {  }
-  buttons_size: null
-  addtoany_html: ''
   link_url: ''
   link_title: ''
+  buttons_size: null
+  addtoany_html: ''
+  context_mapping: {  }
 visibility: {  }

@@ -1,17 +1,17 @@
-uuid: 0488ed0e-d595-4713-8b8e-378bf474cdab
+uuid: fb4ce5c3-44da-46ab-b7ec-d15fedd1fb58
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - drupal_starterkit_theme
+    - booster_theme
 _core:
-  default_config_hash: Wc3s_FD6Wi7WDi6apeCQdbUBXzDg129XZn-9mDuGqQw
-id: drupal_starterkit_theme_messages
-theme: drupal_starterkit_theme
+  default_config_hash: aWL5TnPS1hHiYEwWAKInHXBqT3M0kF1_4PScVAefAPQ
+id: booster_theme_messages
+theme: booster_theme
 region: header
-weight: -2
+weight: -3
 provider: null
 plugin: system_messages_block
 settings:
