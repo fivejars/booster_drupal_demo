@@ -2034,6 +2034,65 @@
             }
         },
         {
+            "name": "drupal/bootstrap_layout_builder",
+            "version": "2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bootstrap_layout_builder.git",
+                "reference": "2.1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap_layout_builder-2.1.2.zip",
+                "reference": "2.1.2",
+                "shasum": "c0000f57f9b218fd43b893f3311de73911020ced"
+            },
+            "require": {
+                "drupal/bootstrap_styles": "^1.1",
+                "drupal/core": "^9.3 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.2",
+                    "datestamp": "1690460409",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Amira Dowidar",
+                    "homepage": "https://www.drupal.org/user/3092603"
+                },
+                {
+                    "name": "mahmoud-zayed",
+                    "homepage": "https://www.drupal.org/user/2947001"
+                },
+                {
+                    "name": "Rajab Natshah",
+                    "homepage": "https://www.drupal.org/user/1414312"
+                }
+            ],
+            "description": "Add Bootstrap Grid support to Layout Builder module.",
+            "homepage": "https://www.drupal.org/project/bootstrap_layout_builder",
+            "keywords": [
+                "Bootstrap",
+                "Drupal",
+                "Grid",
+                "Layout Builder"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/bootstrap_layout_builder"
+            }
+        },
+        {
             "name": "drupal/bootstrap_styles",
             "version": "1.1.6",
             "source": {
@@ -8791,12 +8850,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fivejars/booster_drupal.git",
-                "reference": "6004e57dfe95d7188824011ba4c3011354933f46"
+                "reference": "75e900d0980252fd07385341508c3cb0ebaaef34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fivejars/booster_drupal/zipball/6004e57dfe95d7188824011ba4c3011354933f46",
-                "reference": "6004e57dfe95d7188824011ba4c3011354933f46",
+                "url": "https://api.github.com/repos/fivejars/booster_drupal/zipball/75e900d0980252fd07385341508c3cb0ebaaef34",
+                "reference": "75e900d0980252fd07385341508c3cb0ebaaef34",
                 "shasum": ""
             },
             "require": {
@@ -8807,6 +8866,7 @@
                 "drupal/admin_toolbar": "^3.4",
                 "drupal/advagg": "^6.0@alpha",
                 "drupal/better_exposed_filters": "^6.0",
+                "drupal/bootstrap_layout_builder": "^2.1",
                 "drupal/ckeditor_bidi": "^4.0",
                 "drupal/ckeditor_find": "^2.0@beta",
                 "drupal/ckeditor_font": "^2.0@beta",
@@ -8886,7 +8946,7 @@
                         "Issue #3380686: Unable to install due to unmet dependencies": "https://www.drupal.org/files/issues/2024-04-23/3380686__13.patch"
                     },
                     "drupal/entity_browser": {
-                        "Issue #2922885 by CHiLi.HH, oknate, l0ke: Provide upload widget for media of media type file": "https://www.drupal.org/files/issues/2019-02-28/entity_browser-media-file-upload-2922885-15.patch",
+                        "Issue #2922885: Provide upload widget for media of media type file": "https://www.drupal.org/files/issues/2019-02-28/entity_browser-media-file-upload-2922885-15.patch",
                         "Issue #3104901: Entity Browser used in a entity referenced field of a layout builder custom block is not working": "https://www.drupal.org/files/issues/2024-04-24/3104901-31_0.patch"
                     },
                     "drupal/layout_builder_browser": {
@@ -8898,8 +8958,14 @@
                     "drupal/pdf_reader": {
                         "Issue #1293136: Percent instead of width and height": "https://www.drupal.org/files/issues/2024-04-22/1293136__6.patch"
                     },
+                    "drupal/gin": {
+                        "3207969 - Positioning of the entity browser is sometimes off": "https://www.drupal.org/files/issues/2023-08-22/3207969-13.patch"
+                    },
+                    "drupal/gin_toolbar": {
+                        "Issue #3293209: Library information alter should not be context-aware": "https://www.drupal.org/files/issues/2023-09-22/gin_toolbar-3293209-10.patch"
+                    },
                     "drupal/core": {
-                        "3075236 - jQuery UI dialog modals repositions incorrectly on window resize when there is a off canvas rendered": "https://www.drupal.org/files/issues/2023-07-18/3075236-39.patch"
+                        "Issue #3075236: jQuery UI dialog modals repositions incorrectly on window resize when there is a off canvas rendered": "https://www.drupal.org/files/issues/2023-07-18/3075236-39.patch"
                     }
                 }
             },
@@ -8912,7 +8978,7 @@
                 "issues": "https://github.com/fivejars/booster_drupal/issues",
                 "source": "https://github.com/fivejars/booster_drupal/tree/1.x"
             },
-            "time": "2024-05-02T11:23:19+00:00"
+            "time": "2024-05-03T08:15:42+00:00"
         },
         {
             "name": "fivejars/booster_drupal_theme",
@@ -8920,12 +8986,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fivejars/booster_drupal_theme.git",
-                "reference": "4270c6a16771aa640ec697c844242ae1679171bc"
+                "reference": "e032c7bbe4ef987a81ea43eea174e2ab6ce89076"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fivejars/booster_drupal_theme/zipball/4270c6a16771aa640ec697c844242ae1679171bc",
-                "reference": "4270c6a16771aa640ec697c844242ae1679171bc",
+                "url": "https://api.github.com/repos/fivejars/booster_drupal_theme/zipball/e032c7bbe4ef987a81ea43eea174e2ab6ce89076",
+                "reference": "e032c7bbe4ef987a81ea43eea174e2ab6ce89076",
                 "shasum": ""
             },
             "require": {
@@ -8952,7 +9018,7 @@
                 "issues": "https://github.com/fivejars/booster_drupal_theme/issues",
                 "source": "https://github.com/fivejars/booster_drupal_theme/tree/1.x"
             },
-            "time": "2024-05-02T10:11:36+00:00"
+            "time": "2024-05-03T08:25:37+00:00"
         },
         {
             "name": "goalgorilla/rtseo.js",

@@ -58,3 +58,6 @@ cloneable_entities:
   - webform
   - menu_link_content
   - pardot_submission
+  - blb_layout
+  - blb_breakpoint
+  - blb_layout_option
