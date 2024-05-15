@@ -4,11 +4,13 @@ parameters:
   level: 9
   paths:
     - web/modules/custom
+    - web/profiles/contrib
   customRulesetUsed: true
   ignoreErrors:
     - '#Function [a-zA-Z0-9\\_\\\\:\\(\\)]+ return type has no value type specified in iterable type array#'
     - '#Method Drupal[a-zA-Z0-9\\_\\\\:\\(\\)]+ has parameter \$[a-zA-Z0-9\\_]+ with no value type specified in iterable type array#'
     - '#Method Drupal[a-zA-Z0-9\\_\\\\:\\(\\)]+ return type has no value type specified in iterable type array#'
+    - '#Function booster_[a-zA-Z\\_\\\\(\\)]+ has parameter [a-zA-Z\\$\\_]+ with no value type specified in iterable type [a-zA-Z\\_\\\\(\\)]+#'
 
   # FROM mglaman/drupal-check/phpstan/base_config.neon
   reportUnmatchedIgnoredErrors: false

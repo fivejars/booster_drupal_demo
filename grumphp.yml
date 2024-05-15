@@ -52,10 +52,11 @@ grumphp:
     phpmd:
       whitelist_patterns:
         - /^web\/modules\/custom\/(.*)/
+        - /^web\/profiles\/contrib\/(.*)/
       ruleset: [ 'phpmd.xml' ]
       triggered_by: [ 'php', 'install', 'inc', 'module' ]
     phpmnd:
-      directory: web/modules/custom
+      directory: web/modules/custom,web/profiles/contrib
       whitelist_patterns: [ ]
       exclude: [ ]
       exclude_name: [ ]

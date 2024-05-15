@@ -8850,12 +8850,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fivejars/booster_drupal.git",
-                "reference": "75e900d0980252fd07385341508c3cb0ebaaef34"
+                "reference": "f25d7134f078f99c9d23a9fcd400c39012a1af6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fivejars/booster_drupal/zipball/75e900d0980252fd07385341508c3cb0ebaaef34",
-                "reference": "75e900d0980252fd07385341508c3cb0ebaaef34",
+                "url": "https://api.github.com/repos/fivejars/booster_drupal/zipball/f25d7134f078f99c9d23a9fcd400c39012a1af6e",
+                "reference": "f25d7134f078f99c9d23a9fcd400c39012a1af6e",
                 "shasum": ""
             },
             "require": {
@@ -8978,7 +8978,7 @@
                 "issues": "https://github.com/fivejars/booster_drupal/issues",
                 "source": "https://github.com/fivejars/booster_drupal/tree/1.x"
             },
-            "time": "2024-05-03T08:15:42+00:00"
+            "time": "2024-05-15T08:52:04+00:00"
         },
         {
             "name": "fivejars/booster_drupal_theme",
