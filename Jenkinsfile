@@ -38,9 +38,17 @@ pipeline {
       }
     }
     stage('build') {
-        steps {
-            sh 'fin init'
+      steps {
+        sh 'fin init'
+      }
+    }
+    stage('Storybook') {
+      steps {
+        catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+          sh 'fin storybook'
+          echo "Storybook available at ${BUILD_URL}storybook/"
         }
+      }
     }
   }
   post {

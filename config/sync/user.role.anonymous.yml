@@ -5,6 +5,7 @@ dependencies:
   module:
     - media
     - sitemap
+    - storybook
     - system
 id: anonymous
 label: Anonymous
@@ -13,4 +14,5 @@ is_admin: false
 permissions:
   - 'access content'
   - 'access sitemap'
+  - 'render storybook stories'
   - 'view media'
