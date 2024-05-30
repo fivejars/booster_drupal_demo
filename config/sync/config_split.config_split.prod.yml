@@ -1,0 +1,19 @@
+uuid: 6da1efcc-13d2-4eeb-97b6-aac19d0fb058
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 0eCdJ3gxH-QAAsiGRkgRsx99G7j1Pe6_UgQXoEEugs8
+id: prod
+label: Production
+description: 'Production configuration that is used on prod instance.'
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../config/splits/prod
+module:
+  shield: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

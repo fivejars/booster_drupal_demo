@@ -42,6 +42,7 @@ $settings['trusted_host_patterns'] = [
  * Configuration overrides for Config split.
  */
 $config["config_split.config_split.dev"]["status"] = TRUE;
+$config["config_split.config_split.prod"]["status"] = FALSE;
 
 /**
  * Configuration overrides for OpenAI integration.
