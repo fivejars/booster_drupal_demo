@@ -16,7 +16,7 @@
         "drupal/webform_pardot": "^2.0@beta",
         "drush/drush": "^12.4",
         "fivejars/booster_drupal": "1.x-dev",
-        "fivejars/booster_drupal_theme": "1.x-dev",
+        "fivejars/booster_drupal_theme": "dev-storybook-demo",
         "wikimedia/composer-merge-plugin": "^2.1"
     },
     "require-dev": {

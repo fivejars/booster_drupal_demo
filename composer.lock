@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f74f814ea5ecf7f27ee9c9246822f56f",
+    "content-hash": "fc59ae9bd3d8bd47e56e7af8494960e2",
     "packages": [
         {
             "name": "algolia/places",
@@ -7859,6 +7859,55 @@
             }
         },
         {
+            "name": "drupal/storybook",
+            "version": "1.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/storybook.git",
+                "reference": "1.0.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/storybook-1.0.0-beta2.zip",
+                "reference": "1.0.0-beta2",
+                "shasum": "a5759d634fef5854ac043af090da9917f0fccb6f"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10",
+                "e0ipso/twig-storybook": "^1.3",
+                "ext-dom": "*",
+                "symfony/css-selector": "^4 || ^6",
+                "symfony/dom-crawler": "^4 || ^6"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-beta2",
+                    "datestamp": "1714062099",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mateu Aguiló Bosch (e0ipso)",
+                    "homepage": "https://www.drupal.org/u/e0ipso",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Storybook integration for Single Directory Components in Drupal",
+            "homepage": "https://www.drupal.org/project/storybook",
+            "support": {
+                "source": "https://git.drupalcode.org/project/storybook"
+            }
+        },
+        {
             "name": "drupal/tfa",
             "version": "1.7.0",
             "source": {
@@ -8589,6 +8638,61 @@
             "time": "2024-03-20T15:03:27+00:00"
         },
         {
+            "name": "e0ipso/twig-storybook",
+            "version": "v1.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/e0ipso/twig-storybook.git",
+                "reference": "bbb86a26f4678c0a53501cea75dece06b66409ac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/e0ipso/twig-storybook/zipball/bbb86a26f4678c0a53501cea75dece06b66409ac",
+                "reference": "bbb86a26f4678c0a53501cea75dece06b66409ac",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-mbstring": "*",
+                "php": ">=8.1",
+                "symfony/dom-crawler": "^4.4.45 || ^6",
+                "twig/twig": "^2.15.4 || ^3"
+            },
+            "require-dev": {
+                "enlightn/security-checker": "^1",
+                "ergebnis/composer-normalize": "^2",
+                "nikic/php-parser": "^4",
+                "php-parallel-lint/php-parallel-lint": "^1",
+                "phpro/grumphp-shim": "^2",
+                "phpunit/phpunit": "^9.5",
+                "povils/phpmnd": "^3",
+                "squizlabs/php_codesniffer": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TwigStorybook\\": "src",
+                    "TwigStorybook\\Tests\\": "tests/src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mateu Aguiló Bosch",
+                    "email": "mateu@mateuaguilo.com"
+                }
+            ],
+            "description": "Extends Twig with new \"stories\" and \"story\" tags for easily writing Storybook stories using Twig templates.",
+            "support": {
+                "issues": "https://github.com/e0ipso/twig-storybook/issues",
+                "source": "https://github.com/e0ipso/twig-storybook/tree/v1.3.2"
+            },
+            "time": "2024-02-16T14:19:05+00:00"
+        },
+        {
             "name": "egulias/email-validator",
             "version": "4.0.2",
             "source": {
@@ -8982,23 +9086,23 @@
         },
         {
             "name": "fivejars/booster_drupal_theme",
-            "version": "1.x-dev",
+            "version": "dev-storybook-demo",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fivejars/booster_drupal_theme.git",
-                "reference": "e032c7bbe4ef987a81ea43eea174e2ab6ce89076"
+                "reference": "cf57e57a01fac70ff1e1e7c65f77965ae8e995d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fivejars/booster_drupal_theme/zipball/e032c7bbe4ef987a81ea43eea174e2ab6ce89076",
-                "reference": "e032c7bbe4ef987a81ea43eea174e2ab6ce89076",
+                "url": "https://api.github.com/repos/fivejars/booster_drupal_theme/zipball/cf57e57a01fac70ff1e1e7c65f77965ae8e995d0",
+                "reference": "cf57e57a01fac70ff1e1e7c65f77965ae8e995d0",
                 "shasum": ""
             },
             "require": {
                 "cweagans/composer-patches": "^1.5.0",
-                "drupal/radix": "6.0.0-beta13"
+                "drupal/radix": "6.0.0-beta13",
+                "drupal/storybook": "^1.0@beta"
             },
-            "default-branch": true,
             "type": "drupal-theme",
             "extra": {
                 "enable-patching": true,
@@ -9006,6 +9110,12 @@
                 "patches": {
                     "drupal/radix": {
                         "Issue #3439449: Drupal\\sdc\\Exception\\InvalidComponentException: [type] NULL value found, but a string or an object is required. (status message)": "https://www.drupal.org/files/issues/2024-04-15/3439449__4.patch"
+                    },
+                    "drupal/storybook": {
+                        "Issue #3424336: Allow the server url to be set as a global parameter": "https://git.drupalcode.org/project/storybook/-/merge_requests/6.patch"
+                    },
+                    "e0ipso/twig-storybook": {
+                        "Feature allow global server url": "https://github.com/e0ipso/twig-storybook/pull/11.patch"
                     }
                 }
             },
@@ -9016,9 +9126,9 @@
             "description": "Theme for Booster Drupal distribution.",
             "support": {
                 "issues": "https://github.com/fivejars/booster_drupal_theme/issues",
-                "source": "https://github.com/fivejars/booster_drupal_theme/tree/1.x"
+                "source": "https://github.com/fivejars/booster_drupal_theme/tree/storybook-demo"
             },
-            "time": "2024-05-03T08:25:37+00:00"
+            "time": "2024-05-23T08:25:29+00:00"
         },
         {
             "name": "goalgorilla/rtseo.js",
@@ -11816,6 +11926,71 @@
             "time": "2024-03-29T19:07:53+00:00"
         },
         {
+            "name": "symfony/css-selector",
+            "version": "v6.4.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/css-selector.git",
+                "reference": "1c5d5c2103c3762aff27a27e1e2409e30a79083b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/1c5d5c2103c3762aff27a27e1e2409e30a79083b",
+                "reference": "1c5d5c2103c3762aff27a27e1e2409e30a79083b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\CssSelector\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Jean-François Simon",
+                    "email": "jeanfrancois.simon@sensiolabs.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Converts CSS selectors to XPath expressions",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/css-selector/tree/v6.4.7"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-04-18T09:22:46+00:00"
+        },
+        {
             "name": "symfony/dependency-injection",
             "version": "v6.4.6",
             "source": {
@@ -11962,6 +12137,73 @@
                 }
             ],
             "time": "2023-05-23T14:45:45+00:00"
+        },
+        {
+            "name": "symfony/dom-crawler",
+            "version": "v6.4.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/dom-crawler.git",
+                "reference": "2088c5da700b1e7a8689fffc10dda6c1f643deea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/2088c5da700b1e7a8689fffc10dda6c1f643deea",
+                "reference": "2088c5da700b1e7a8689fffc10dda6c1f643deea",
+                "shasum": ""
+            },
+            "require": {
+                "masterminds/html5": "^2.6",
+                "php": ">=8.1",
+                "symfony/polyfill-ctype": "~1.8",
+                "symfony/polyfill-mbstring": "~1.0"
+            },
+            "require-dev": {
+                "symfony/css-selector": "^5.4|^6.0|^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\DomCrawler\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Eases DOM navigation for HTML and XML documents",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/dom-crawler/tree/v6.4.7"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-04-18T09:22:46+00:00"
         },
         {
             "name": "symfony/error-handler",
