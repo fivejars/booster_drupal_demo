@@ -186,7 +186,11 @@ echo -e "${green_bg} Step 5 ${NC}${green} Deploying...${NC}"
 time deploy
 
 echo -e "${green_bg} Step 6 ${NC}${green} Resetting Drupal Admin password...${NC}"
-time reset_admin_password
+if [[ "$SITE_ENVIRONMENT" == "dev" ]]; then
+  time reset_admin_password
+else
+  echo-yellow "Skipped."
+fi
 
 if is_windows; then
   echo-green "Add ${VIRTUAL_HOST} to your hosts file (/etc/hosts), e.g.:"

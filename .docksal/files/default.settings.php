@@ -874,6 +874,7 @@ if ($_SERVER['HTTP_USER_AGENT'] !== 'Drupal command line') {
  */
 $settings['trusted_host_patterns'] = [
   '^(.*?).fivejars\.com$',
+  '^(.*?).fivejars\.agency$',
 ];
 
 /**
