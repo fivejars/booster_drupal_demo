@@ -38,6 +38,9 @@ elements: |-
     '#type': textarea
     '#required': true
     '#test': 'Please ignore this email.'
+  terms_of_service:
+    '#type': webform_terms_of_service
+    '#terms_content': '<p><span style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);color:rgba(0, 0, 0, 0.8);display:inline !important;float:none;font-family:&quot;Source Sans Pro&quot;, sans-serif;font-size:16.2px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:-0.0486px;orphans:2;text-align:justify;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">Lorem ipsum dolor sit amet consectetur adipiscing elit cubilia commodo, luctus facilisi augue non sem curabitur massa elementum sapien, himenaeos torquent penatibus tellus id per lacinia eu. Sed nunc semper morbi vel dui cras porttitor augue, pellentesque tellus vitae venenatis cubilia vivamus fames integer odio, ornare montes turpis ante gravida convallis mattis. Parturient purus imperdiet sodales malesuada vel penatibus bibendum non ornare, scelerisque semper class magna nulla volutpat risus natoque erat, magnis porttitor consequat suspendisse metus nisi facilisis vitae, mauris pulvinar fames laoreet himenaeos lobortis rhoncus posuere.</span></p>'
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
