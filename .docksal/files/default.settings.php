@@ -883,6 +883,25 @@ $settings['trusted_host_patterns'] = [
 $settings['file_private_path'] = 'sites/default/files/private';
 
 /**
+ * Allow seamless HTTPS when behind Docksal's proxy.
+ *
+ * @see https://docs.docksal.io/apps/drupal/#reverse-proxy
+ */
+if (PHP_SAPI !== 'cli') {
+  $settings['reverse_proxy'] = TRUE;
+  $settings['reverse_proxy_addresses'] = array($_SERVER['REMOTE_ADDR']);
+  // HTTPS behind reverse-proxy
+  if (
+    isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https' &&
+    !empty($settings['reverse_proxy']) && in_array($_SERVER['REMOTE_ADDR'], $settings['reverse_proxy_addresses'])
+  ) {
+    $_SERVER['HTTPS'] = 'on';
+    // This is hardcoded because there is no header specifying the original port.
+    $_SERVER['SERVER_PORT'] = 443;
+  }
+}
+
+/**
  * Load local development override configuration, if available.
  *
  * Create a settings.local.php file to override variables on secondary (staging,

@@ -28,7 +28,6 @@ web/.editorconfig
 web/.eslintignore
 web/.eslintrc.json
 web/example.gitignore
-web/.htaccess
 web/.gitattributes
 web/.ht.router.php
 web/autoload.php
